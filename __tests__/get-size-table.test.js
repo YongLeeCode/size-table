@@ -49,4 +49,7 @@ describe("getSizeTable", () => {
     expect(consoleSpy).toHaveBeenCalledWith("Fail to create Table");
     consoleSpy.mockRestore();
   });
+  it("fail", () => {
+      expect(true).toBe(false);
+  });
 });
