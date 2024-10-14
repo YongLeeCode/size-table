@@ -23,11 +23,6 @@ jobs:
         if: always()
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v3
-        if: always()
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
       - name: Discord Webhook Action
         uses: tsickert/discord-webhook@v5.3.0
         if: always()
